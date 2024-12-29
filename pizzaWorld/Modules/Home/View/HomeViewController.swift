@@ -6,20 +6,34 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var silderCollectionView: UICollectionView!
-    var silderTimer: Timer?
-    var slides: [Int] = [1,2,3,4,5]
-    var currentSlide = 0
+    @IBOutlet weak var pupularTableView: UITableView!
+    
+    let viewModel = HomeViewModel()
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Test")
         setupUI()
         registerCells()
-        silderTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(scrollToNextItem), userInfo: nil, repeats: true)
+        bind()
+        viewModel.viewDidLoad()
+    }
+    
+    func bind() {
+//        viewModel.slideToItemAtIndex = { [weak self] index in
+//            self?.silderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: true)
+//        }
+        
+        viewModel.slideToItem.subscribe { [weak self ] index in
+            self?.silderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: true)
+        }.disposed(by: disposeBag)
     }
     
     private func setupUI() {
@@ -29,10 +43,12 @@ class HomeViewController: UIViewController {
         
     }
     
-    @objc func scrollToNextItem(){
-        let nextSlide = currentSlide + 1
-        currentSlide = nextSlide % slides.count
-        silderCollectionView.scrollToItem(at: IndexPath(row: currentSlide, section: 0), at: [.centeredVertically, .centeredHorizontally], animated: true)
+    func setupPopularTableView() {
+        pupularTableView.rx.setDelegate(self).disposed(by: disposeBag)
+        viewModel.popularItems.asObservable()
+            .bind(to: pupularTableView.rx.items(cellIdentifier: String(describing: PopularCell.self), cellType: PopularCell.self)) { index, model, cell in
+                
+            }.disposed(by: disposeBag)
     }
     
     private func registerCells() {
@@ -54,7 +70,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return slides.count
+        return viewModel.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

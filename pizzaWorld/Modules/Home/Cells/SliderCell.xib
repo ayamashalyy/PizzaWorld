@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="457" height="414"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vecteezy_top-view-pizza-with_24589160" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-XK-72S">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vecteezy_the-pepperoni-pizza-and-a-piece-of-streched-cheese-pizza-with_22994041" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-XK-72S">
                         <rect key="frame" x="23" y="30" width="411" height="354"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -35,16 +35,23 @@
                                 <color key="backgroundColor" name="myCustom"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ORDER NOW">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ORDER NOW   ">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cht-UQ-HHy">
                                 <rect key="frame" x="15.000000000000014" y="10" width="226.33333333333337" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUE-co-6fw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seafood Pesto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUE-co-6fw">
                                         <rect key="frame" x="0.0" y="0.0" width="226.33333333333334" height="25"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -59,10 +66,10 @@
                                         <rect key="frame" x="0.0" y="50" width="226.33333333333334" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="39q-7u-D8J">
-                                                <rect key="frame" x="0.0" y="0.0" width="143.33333333333334" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="154.66666666666666" height="30"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6bH-Ok-RiZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="30"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork" translatesAutoresizingMaskIntoConstraints="NO" id="GRF-CU-Y9u">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
@@ -71,15 +78,15 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHd-bA-4Nz">
-                                                                <rect key="frame" x="27.999999999999996" y="0.0" width="38.666666666666657" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="28.000000000000004" y="0.0" width="44.333333333333343" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-5S-4bx">
-                                                        <rect key="frame" x="76.666666666666657" y="0.0" width="66.666666666666657" height="30"/>
+                                                        <rect key="frame" x="82.333333333333343" y="0.0" width="72.333333333333343" height="30"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-KI-hIp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
@@ -88,9 +95,9 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqt-4I-NmD">
-                                                                <rect key="frame" x="27.999999999999996" y="0.0" width="38.666666666666657" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="28.000000000000004" y="0.0" width="44.333333333333343" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" systemColor="systemGray2Color"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -162,12 +169,15 @@
     <resources>
         <image name="clock" width="16" height="16"/>
         <image name="fork" width="16" height="16"/>
-        <image name="vecteezy_top-view-pizza-with_24589160" width="4946" height="4736"/>
+        <image name="vecteezy_the-pepperoni-pizza-and-a-piece-of-streched-cheese-pizza-with_22994041" width="6144" height="3072"/>
         <namedColor name="myCustom">
             <color red="1" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

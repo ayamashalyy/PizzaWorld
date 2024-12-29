@@ -18,6 +18,12 @@
 		033E6F302D1EF31300410D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033E6F2F2D1EF31300410D95 /* Assets.xcassets */; };
 		033E6F332D1EF31300410D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033E6F312D1EF31300410D95 /* LaunchScreen.storyboard */; };
 		033E6F3C2D1EF74A00410D95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033E6F3A2D1EF74A00410D95 /* HomeViewController.swift */; };
+		0384B5E62D21C1770076CAB9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B5E52D21C1770076CAB9 /* HomeViewModel.swift */; };
+		0384B5E82D21FF3B0076CAB9 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B5E72D21FF3B0076CAB9 /* UITableView+Extensions.swift */; };
+		0384B5EB2D2200ED0076CAB9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B5EA2D2200ED0076CAB9 /* Product.swift */; };
+		0384B5EE2D2204B40076CAB9 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B5EC2D2204B40076CAB9 /* PopularCell.swift */; };
+		0384B5EF2D2204B40076CAB9 /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0384B5ED2D2204B40076CAB9 /* PopularCell.xib */; };
+		AFE3CA24BF94CE8DC71C706D /* Pods_pizzaWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797324A06A3319D29B39D6C2 /* Pods_pizzaWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,14 @@
 		033E6F322D1EF31300410D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		033E6F342D1EF31300410D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		033E6F3A2D1EF74A00410D95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0384B5E52D21C1770076CAB9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0384B5E72D21FF3B0076CAB9 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		0384B5EA2D2200ED0076CAB9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0384B5EC2D2204B40076CAB9 /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		0384B5ED2D2204B40076CAB9 /* PopularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCell.xib; sourceTree = "<group>"; };
+		57395EDBC77D7A44059E9C37 /* Pods-pizzaWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pizzaWorld.release.xcconfig"; path = "Target Support Files/Pods-pizzaWorld/Pods-pizzaWorld.release.xcconfig"; sourceTree = "<group>"; };
+		797324A06A3319D29B39D6C2 /* Pods_pizzaWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pizzaWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95FFE6074BE6B9C151D30A48 /* Pods-pizzaWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pizzaWorld.debug.xcconfig"; path = "Target Support Files/Pods-pizzaWorld/Pods-pizzaWorld.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE3CA24BF94CE8DC71C706D /* Pods_pizzaWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +67,8 @@
 			children = (
 				030464442D1F227A00AC3AE9 /* SliderCell.swift */,
 				030464452D1F227A00AC3AE9 /* SliderCell.xib */,
+				0384B5EC2D2204B40076CAB9 /* PopularCell.swift */,
+				0384B5ED2D2204B40076CAB9 /* PopularCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -85,6 +102,8 @@
 			children = (
 				033E6F222D1EF30900410D95 /* pizzaWorld */,
 				033E6F212D1EF30900410D95 /* Products */,
+				E226E568B9D8C0FD9E00A025 /* Pods */,
+				69E4732B43A23F20C6A18E85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,7 @@
 		033E6F222D1EF30900410D95 /* pizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				0384B5E92D2200D60076CAB9 /* Model */,
 				0304644C2D1F539200AC3AE9 /* Core */,
 				033E6F342D1EF31300410D95 /* Info.plist */,
 				033E6F2C2D1EF30A00410D95 /* pizzaWorld.xcdatamodeld */,
@@ -140,6 +160,7 @@
 			children = (
 				030464482D1F299E00AC3AE9 /* UICollectionView+Extensios.swift */,
 				0304644A2D1F3C5700AC3AE9 /* UIView+Extensions.swift */,
+				0384B5E72D21FF3B0076CAB9 /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -147,6 +168,7 @@
 		033E6F422D1F1F3F00410D95 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0384B5E42D21C0020076CAB9 /* ViewModel */,
 				030464432D1F223400AC3AE9 /* Cells */,
 				033E6F432D1F1F5E00410D95 /* View */,
 			);
@@ -162,6 +184,39 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0384B5E42D21C0020076CAB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0384B5E52D21C1770076CAB9 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0384B5E92D2200D60076CAB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0384B5EA2D2200ED0076CAB9 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69E4732B43A23F20C6A18E85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797324A06A3319D29B39D6C2 /* Pods_pizzaWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E226E568B9D8C0FD9E00A025 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95FFE6074BE6B9C151D30A48 /* Pods-pizzaWorld.debug.xcconfig */,
+				57395EDBC77D7A44059E9C37 /* Pods-pizzaWorld.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 033E6F372D1EF31300410D95 /* Build configuration list for PBXNativeTarget "pizzaWorld" */;
 			buildPhases = (
+				9A80A25EC2284251E8E940CA /* [CP] Check Pods Manifest.lock */,
 				033E6F1C2D1EF30900410D95 /* Sources */,
 				033E6F1D2D1EF30900410D95 /* Frameworks */,
 				033E6F1E2D1EF30900410D95 /* Resources */,
+				9FEBD4160B534F6D6DF6E036 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +279,7 @@
 			files = (
 				033E6F332D1EF31300410D95 /* LaunchScreen.storyboard in Resources */,
 				033E6F302D1EF31300410D95 /* Assets.xcassets in Resources */,
+				0384B5EF2D2204B40076CAB9 /* PopularCell.xib in Resources */,
 				030464472D1F227A00AC3AE9 /* SliderCell.xib in Resources */,
 				030464422D1F218C00AC3AE9 /* HomeViewController.xib in Resources */,
 			);
@@ -229,16 +287,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A80A25EC2284251E8E940CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pizzaWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEBD4160B534F6D6DF6E036 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pizzaWorld/Pods-pizzaWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pizzaWorld/Pods-pizzaWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pizzaWorld/Pods-pizzaWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		033E6F1C2D1EF30900410D95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0384B5E82D21FF3B0076CAB9 /* UITableView+Extensions.swift in Sources */,
 				0304644B2D1F3C5700AC3AE9 /* UIView+Extensions.swift in Sources */,
 				033E6F2E2D1EF30A00410D95 /* pizzaWorld.xcdatamodeld in Sources */,
+				0384B5EE2D2204B40076CAB9 /* PopularCell.swift in Sources */,
 				030464492D1F299E00AC3AE9 /* UICollectionView+Extensios.swift in Sources */,
+				0384B5E62D21C1770076CAB9 /* HomeViewModel.swift in Sources */,
 				033E6F242D1EF30A00410D95 /* AppDelegate.swift in Sources */,
 				030464462D1F227A00AC3AE9 /* SliderCell.swift in Sources */,
+				0384B5EB2D2200ED0076CAB9 /* Product.swift in Sources */,
 				033E6F3C2D1EF74A00410D95 /* HomeViewController.swift in Sources */,
 				030464502D1F53E700AC3AE9 /* RatingView.swift in Sources */,
 			);
@@ -374,6 +478,7 @@
 		};
 		033E6F382D1EF31300410D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FFE6074BE6B9C151D30A48 /* Pods-pizzaWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +505,7 @@
 		};
 		033E6F392D1EF31300410D95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57395EDBC77D7A44059E9C37 /* Pods-pizzaWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
